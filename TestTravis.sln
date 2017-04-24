@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTravis", "TestTravis\TestTravis.csproj", "{ADD72C52-DC33-4053-87C3-5365596B32AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTravis.Test", "TestTravis.Test\TestTravis.Test.csproj", "{2866F7AD-7FD4-4078-8099-106FFF59B3C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADD72C52-DC33-4053-87C3-5365596B32AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD72C52-DC33-4053-87C3-5365596B32AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD72C52-DC33-4053-87C3-5365596B32AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD72C52-DC33-4053-87C3-5365596B32AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2866F7AD-7FD4-4078-8099-106FFF59B3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2866F7AD-7FD4-4078-8099-106FFF59B3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2866F7AD-7FD4-4078-8099-106FFF59B3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2866F7AD-7FD4-4078-8099-106FFF59B3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
