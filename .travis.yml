@@ -1,8 +1,12 @@
 language: csharp
 solution: TestTravis.sln
+notifications:
+  slack:
+    slack: chatbotteamhq:UVeEkK8JOTDTcISTD1g59pjq
+    secure: pBAHfVI5Z+WY3xAOP2UjJwHh8iLqPY0GivujrxaOc7YWmCwMrb9iWwKWYQ7oG9N/Y5WP05llrX+dxIm5zGnWzf0mP0fVUV6MpqTTmRbgHFAp+7z75GvhOoHqqmt4d5dQladH22zAZMXZQErcvMZWcbRxV+V7ucZotBbi4ot4ZIVPyE31FQqtCZbI+YDfSsa2JTV+Rx/RPmutNgJZAbx954JBWwB+A6Xs1MfFgU1FZSWl1xgjpmherYiyY6ScslXSAOV1kyWt0nYX6Mo0917O7xKdAvXI1HUsd9HC4wYGPCIbRVfPpGJPY0iHVO74OENshGk7OkuADUfLjNT8m3ct+bYkGGzuJXbN4MNHB82cEHvLO9NY0a3YsSG5rH5IxYldYG/uxO30OZYtWQlqmA3faCtBVaV9mt/0hdvjIq+1M37gNzyOMGfgPnzhvhO6sf7Agg+AwzhRMglIKVihdM8ynifyMePbpZxyETeaF7303rdYQ9KO8n0cHZxukzsa25ZR6POUNJOyPPIeqmUdXDP3dxZZcanIucvIR9dFoSzbyCV5CgdLAPtwxYuPvcYHhV/3H5b1mW8vL39uSzJJnWLJ+WsRHzRO2GZbUvRjSfgsblGRfLYNAQvc4VbT7MBX1uigBu53gh6jTjV+2iGNJLaPpwPrlWkzqPr5rtN2VHq6IZc=
 install:
-  - nuget restore TestTravis.sln
-  - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
+- nuget restore TestTravis.sln
+- nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release TestTravis.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.6.1/tools/nunit3-console.exe ./TestTravis.Test/bin/Release/TestTravis.Test.dll
+- xbuild /p:Configuration=Release TestTravis.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.6.1/tools/nunit3-console.exe ./TestTravis.Test/bin/Release/TestTravis.Test.dll
