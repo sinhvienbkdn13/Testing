@@ -16,7 +16,7 @@ namespace TestTravis.Test
             public void Add()
             {
                 MyMath math = new MyMath();
-                Assert.AreEqual(31, math.Add(20, 11));
+                Assert.AreEqual(41, math.Add(20, 11));
             }
 
             [TestCase]
